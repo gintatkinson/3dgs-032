@@ -24,10 +24,10 @@ classDiagram
     class GeoLocation {
     }
     class ReferenceFrame {
-        +String alternate-system "[0..1]"
-        +String astronomical-body "[0..1]"
+        +String alternate-system [0..1]
+        +String astronomical-body [0..1]
     }
-    note for ReferenceFrame "alternate-system if-feature alternate-systems"
+    note for ReferenceFrame "<<feature_guard>> alternate-systems"
     note for ReferenceFrame "astronomical-body default earth"
     GeoLocation *-- ReferenceFrame : referenceFrame
 ```
