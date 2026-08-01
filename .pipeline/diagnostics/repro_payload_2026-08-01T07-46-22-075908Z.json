@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-01T07:46:22.075908Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "75900b1c2f45d25776d24cc61c309ae68f58fdc4"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-16-components.md class 'Nwi_Component' method 'getName' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

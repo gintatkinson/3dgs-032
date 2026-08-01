@@ -35,6 +35,7 @@ classDiagram
         +String mfg-name "[0..1]"
         +String product-name "[0..1]"
         +String product-rev "[0..1]"
+        +UUID getUuid()
     }
     class Nwi_SoftwareRev {
         +String name "[1]"

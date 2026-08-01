@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-01T07:46:30.764536Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "75900b1c2f45d25776d24cc61c309ae68f58fdc4"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-15-network-elements.md class 'Nwi_NetworkElement' method 'getUuid' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-16-components.md class 'Nwi_Component' method 'getName' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "User Story us-01-hierarchical-inventory-aggregation.md sequence diagram message 'hierarchicalController->>nwiNetworkInventory: updateInventory(inventoryData: String)' calls operation 'updateInventory' which is not defined on class 'Nwi_NetworkInventory' in any class diagram.",
+      "Use Case uc-13-network-inventory.md Realization Matrix contains no User Story checkboxes under '### Required User Stories'.",
+      "docs/use-cases: duplicate ordinal - 13 is claimed by 3 files (uc-13-components.md, uc-13-network-elements.md, uc-13-network-inventory.md). Ordinals must be unique, because backlog reconciliation and Epic checklists reference specifications by number."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}
