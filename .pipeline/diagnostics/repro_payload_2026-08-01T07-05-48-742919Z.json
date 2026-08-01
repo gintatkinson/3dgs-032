@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-01T07:05:48.742919Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "285e3c89da9c23dab9ef1af7e22be3dde02a677e"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Epic 'epic-01-geo-location.md' references imported schema 'ietf-geo-location' without linking to prerequisite parent Epic."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-08-01T07:04:22.820926Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "285e3c89da9c23dab9ef1af7e22be3dde02a677e"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-08-locations.md contains a syntax conflict in classDiagram on line 4: '} {'. Curly braces '{}' inside members/attributes are prohibited due to Mermaid parse errors. Use standard attribute notation or separate notes for constraints.",
+      "Feature feat-08-locations.md class 'NetworkInventory' attribute '{' has invalid type '}'. UML primitive types must be Boolean, Decimal64, Integer, Real, String (case-sensitive), or reference another class.",
+      "Feature feat-08-locations.md class 'NetworkInventory' attribute '{' is missing a valid UML visibility prefix (#, +, -, ~).",
+      "Feature feat-08-locations.md class 'NetworkInventory' attribute '{' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-08-locations.md class 'NetworkInventory' method 'assignLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-08-locations.md class 'LocationRegistry' method 'validateLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-08-locations.md class 'LocationRegistry' method 'getValidUntilTime' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-07-velocity.md contains a disconnected UML Class Diagram. Classes ['VelocityCalculator', 'VelocityController'] are not structurally connected to 'GeoLocation'.",
+      "Epic 'epic-01-geo-location.md' references imported schema 'ietf-geo-location' without linking to prerequisite parent Epic."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}
