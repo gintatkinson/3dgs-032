@@ -28,8 +28,17 @@ classDiagram
         +String v-east "[0..1]"
         +String v-up "[0..1]"
     }
+    class VelocityController {
+        +requestDerivedMetrics(Float vNorth, Float vEast) DerivedMetrics [1]
+    }
+    class VelocityCalculator {
+        +calculateSpeed(Float vNorth, Float vEast) Float [1]
+        +calculateHeading(Float vNorth, Float vEast) Float [1]
+    }
 
     GeoLocation *-- Velocity
+    Velocity --> VelocityController
+    Velocity --> VelocityCalculator
 
 
 ```

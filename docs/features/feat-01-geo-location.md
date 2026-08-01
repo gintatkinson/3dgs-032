@@ -23,11 +23,22 @@ This feature specifies the timing and expiration attributes (`timestamp` and `va
 classDiagram
     class SystemRoot {
     }
-        class GeoLocation {
+    class GeoLocation {
         +String timestamp "[0..1]"
         +String valid-until "[0..1]"
+        +getValidUntil() DateTime [1]
+        +markExpired() Status [1]
+        +recordLocation(CoordinateData coordinates) Status [1]
+    }
+    class LocationManager {
+        +evaluateExpiration(DateTime currentTime) Boolean [1]
+    }
+    class CoordinateValidator {
+        +validateCoordinates(CoordinateData coordinates) Boolean [1]
     }
     SystemRoot *-- GeoLocation : "contains location"
+    GeoLocation --> LocationManager
+    GeoLocation --> CoordinateValidator
 ```
 
 ## Interface Requirements

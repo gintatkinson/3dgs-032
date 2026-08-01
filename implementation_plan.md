@@ -1,35 +1,20 @@
-# Implementation Plan: Draft Epic for ietf-geo-location
+# Implementation Plan: Behavioral and System Interaction Extraction (Phases 2-5) for RFC 9179
 
-## 1. Parse Schema
-- Schema: `ietf-geo-location@2022-02-11.yang`
-- Extracted structural models:
-  - Container `geo-location`
-  - Container `reference-frame`
-  - Choice `location` (cases: `ellipsoid`, `cartesian`)
-  - Container `velocity`
-  - Leaf `timestamp`
-  - Leaf `valid-until`
+## Phase 2: Behavioral Extraction
+- Dispatch a context-isolated `Behavioral Spec Worker` subagent with `PROCEED`.
+- The subagent will parse `docs/rfc9179.txt` to generate User Stories (Given-When-Then BDD scenarios) in `docs/user-stories/`.
+- The subagent will run the local verifier (`verify_model_coverage.py --spec-only`), register User Stories in the tracker using `create_issue.sh`, and link them to Phase 1 Features.
+- The coordinator will verify the subagent's output.
 
-## 2. Draft Epic
-- File: `docs/epics/epic-01-geo-location.md`
-- Content: 
-  - Subsystem Component Definition (`<<component>> GeoLocationSubsystem`)
-  - System-Level UML Class Diagram showing composition of `geo-location` and its children (`reference-frame`, `location`, `velocity`, `timestamp`, `valid-until`).
-  - System State Machine Diagram representing the macro-level domain.
-  - Tasklist of features (leaving the Issue ID generation to Step 5).
+## Phase 3: System Interaction Extraction
+- Dispatch a context-isolated `System Interaction Spec Worker` subagent with `PROCEED`.
+- The subagent will parse `docs/rfc9179.txt` to generate Use Cases and the Realization Matrix linking them to User Stories and Features in `docs/use-cases/`.
+- The subagent will run the local verifier, register Use Cases in the tracker using `create_issue.sh`, and cross-link them.
+- The coordinator will verify the subagent's output.
 
-## 3. Dispatch a context-isolated subagent (Role: `Feature Spec Writer`) to draft `docs/features/feat-02-reference-frame.md`.
-- Target schema node: `ietf-geo-location:geo-location/reference-frame` (excluding the `geodetic-system` child).
-- Parent Epic: `epic-01-geo-location`.
-- Adhere to the structural and formatting templates in `.agents/skills/schema-specification-engineering/SKILL.md` and `rules/platform-independence.md`.
-- Ensure the YAML frontmatter declares exactly one schema container: `ietf-geo-location:geo-location/reference-frame`.
-- Ensure the subagent runs the local validation gate and registers/synchronizes the Feature with the issue tracker.
+## Phase 4: Reconciliation & Automated Verification
+- Run `./skills/spec-orchestrator/scripts/reconcile_backlog.py` to synchronize markdown checkbox states with the GitHub tracker.
+- Run `./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only` to validate 100% schema coverage and UML OMG 2.5.1 metamodel conformance.
 
-## 4. Verify subagent completion and ensure tracker sync is successful.
-
-## 5. Issue Tracker Sync
-- Create epic issue: `gh issue create --title "..." --body-file ...`
-- Sync body: `gh issue edit <ID> --body-file ...`
-
-## 6. Report Back
-- Complete the task and notify the user.
+## Phase 5: Final Reporting
+- Present the final verification output, coverage metrics, and generated tracking matrix links to the user.
