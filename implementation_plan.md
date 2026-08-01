@@ -1,14 +1,16 @@
 # Implementation Plan
 
 ## Objective
-Execute the `schema-specification-engineering` skill against the schema file `/Users/perkunas/jail/3dgs-032/schema/ietf-yang-types@2025-12-22.yang`.
+Execute the `spec-usecase-engineering` skill against the RFC document at `/Users/perkunas/jail/3dgs-032/schema/rfc9911.txt` to identify required System Use Cases.
 
 ## Findings
-The `ietf-yang-types@2025-12-22.yang` schema has been parsed and identified strictly as a **utility module**. It only contains `typedef` helpers (e.g., `counter32`, `mac-address`, `uuid`) and has no concrete data nodes (`container` or `list`).
+- `rfc9911.txt` defines "Common YANG Data Types" (`ietf-yang-types` and `ietf-inet-types`).
+- As previously identified during schema specification engineering, this schema is strictly a utility module containing `typedef` helpers and has no concrete data nodes (`container`, `list`, or `choice`).
+- The `spec-usecase-engineering` skill (Step 2.1) mandates: "Each distinct schema `container` or `choice`/`case` MUST be extracted into its own separate Use Case file."
+- Since there are no containers, choices, or cases in this RFC/schema, there are no System Use Cases to extract.
 
 ## Planned Actions
-1. Following the `schema-specification-engineering` skill instructions (Step 1.2), **NO Epics or Features will be generated** for this utility module.
-2. The types within this module will be cataloged into a Shared Type Registry (`docs/shared-type-registry.md`) so they can be referenced as shared DataTypes/UML Primitives by other functional modules.
-3. The local verification checks and tracker issue creation steps will be skipped for this module since no Epics/Features are generated, thus keeping the pipeline state clean.
+1. Document that no System Use Cases will be generated because `rfc9911.txt` is a data types module with no behavioral architectural chapters, containers, or choices.
+2. Skip the subagent dispatch, verification checks, and issue generation steps, maintaining a clean pipeline state.
 
 Please review and approve this plan.
