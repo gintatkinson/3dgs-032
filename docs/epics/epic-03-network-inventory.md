@@ -12,20 +12,26 @@ spec_source: "Project Constitution"
 This Bounded Context defines a base model for retrieving network inventory, conforming to the Network Management Datastore Architecture (NMDA). It specifies the top-level container for network inventory, network elements, and their hierarchically nested hardware and non-hardware components.
 
 ## 2. Requirements & Checklist
-- [ ] #TBD - [Parent Epic: epic-01-geo-location.md](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-01-geo-location.md) (Prerequisite parent Epic for imported module)
-- [ ] #51 - [Feature: Network Inventory (network-inventory)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md)
-- [ ] #54 - [Feature: Network Elements (network-elements)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-15-network-elements.md)
-- [ ] #57 - [Feature: Components (components)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-16-components.md)
-- [ ] #58 - [Feature: Software Revision (software-rev)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-17-software-rev.md)
-- [ ] #59 - [Feature: Software Patch (patch)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-18-patch.md)
+- [ ] #TBD - [Parent Epic: epic-01-geo-location.md](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-01-geo-location.md) (Prerequisite parent Epic for imported module)
+- [ ] #51 - [Feature: Network Inventory (network-inventory)](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-14-network-inventory.md)
+- [ ] #54 - [Feature: Network Elements (network-elements)](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-15-network-elements.md)
+- [ ] #57 - [Feature: Components (components)](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-16-components.md)
+- [ ] #58 - [Feature: Software Revision (software-rev)](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-17-software-rev.md)
+- [ ] #59 - [Feature: Software Patch (patch)](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-18-patch.md)
 
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-- [ ] #TBD - [Retrieve Network Inventory](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/use-cases/uc-retrieve-inventory.md)
+- [ ] #TBD - [Retrieve Network Inventory](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-retrieve-inventory.md)
+- [ ] #64 - [Network Inventory Root](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-13-network-inventory.md) (semantic linkage justification)
+- [ ] #50 - [Components](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-16-components.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Manage Network Elements](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-99-network-elements.md) (semantic linkage justification)
 
 #### Associated User Stories
-- [ ] #TBD - [View Network Elements](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/user-stories/us-view-network-elements.md)
+- [ ] #TBD - [View Network Elements](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-view-network-elements.md)
+- [ ] #66 - [Northbound Network Inventory Reporting](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-10-northbound-network-inventory-reporting.md) (semantic linkage justification)
+- [ ] #65 - [Device-level Inventory Collection](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-12-device-inventory-collection.md) (semantic linkage justification)
+- [ ] #67 - [Component UUID v5 Derivation](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-81-component-uuid-v5-derivation.md) (semantic linkage justification)
 
 ## 3. Architecture
 
@@ -121,5 +127,5 @@ This module defines a base model for retrieving network inventory.
 The model fully conforms to the Network Management Datastore Architecture (NMDA).
 
 ## 6. Source References
-Structural Schema: [ietf-network-inventory.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-network-inventory.yang) (Clause: N/A)
+Structural Schema: [ietf-network-inventory.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-network-inventory.yang) (Clause: N/A)
 Normative Specification: [draft-ietf-ivy-network-inventory-yang](https://datatracker.ietf.org/doc/html/draft-ietf-ivy-network-inventory-yang) (Clause: N/A)

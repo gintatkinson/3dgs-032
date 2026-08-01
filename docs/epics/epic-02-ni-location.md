@@ -31,6 +31,9 @@ This Epic defines the functional specification for adding physical and geographi
 - [ ] #45 - [Facility Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-03-facility-location.md) (Realizes Epic component)
 - [ ] #46 - [Rack Attributes](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-04-rack-attributes.md) (Realizes Epic component)
 - [ ] #47 - [Assign Location to Network Element](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-05-ne-location.md) (Realizes Epic component)
+- [ ] #50 - [Components](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-16-components.md) (semantic linkage justification)
+- [ ] #45 - [Facility Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-18-facility-location.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Manage Network Elements](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-99-network-elements.md) (semantic linkage justification)
 
 #### Associated User Stories
 - [x] #1 - As an operator, I want to assign a physical location to a network element (https://github.com/repo/blob/main/docs/user-stories/us-01-assign-ne-location.md)
