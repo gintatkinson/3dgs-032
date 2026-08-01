@@ -13,11 +13,11 @@ This Bounded Context defines a base model for retrieving network inventory, conf
 
 ## 2. Requirements & Checklist
 - [ ] #TBD - [Parent Epic: epic-01-geo-location.md](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-01-geo-location.md) (Prerequisite parent Epic for imported module)
-- [ ] #52 - [Feature: Network Inventory (network-inventory)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md)
-- [ ] #53 - [Feature: Network Elements (network-elements)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-15-network-elements.md)
-- [ ] #55 - [Feature: Components (components)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-16-components.md)
-- [ ] #TBD - [Feature: Software Revision (software-rev)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-17-software-rev.md)
-- [ ] #TBD - [Feature: Software Patch (patch)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-18-patch.md)
+- [ ] #51 - [Feature: Network Inventory (network-inventory)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md)
+- [ ] #54 - [Feature: Network Elements (network-elements)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-15-network-elements.md)
+- [ ] #57 - [Feature: Components (components)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-16-components.md)
+- [ ] #58 - [Feature: Software Revision (software-rev)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-17-software-rev.md)
+- [ ] #59 - [Feature: Software Patch (patch)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-18-patch.md)
 
 ### Associated Use Cases & User Stories
 
