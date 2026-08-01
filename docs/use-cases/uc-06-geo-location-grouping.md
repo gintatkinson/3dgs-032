@@ -11,7 +11,7 @@ schema_containers:
 # Use Case: Geo Location
 
 ## Parent Epic
-- [ ] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Provides the overarching scope for geographic locations)
+- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Provides the overarching scope for geographic locations)
 
 ## 1. Actors
 - **Primary Actor:** Network Management System (NMS)
@@ -69,10 +69,10 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #22 - [Temporal Expiration Scenario](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-02-location-expiration.md) (Sets expiration constraints)
+- [ ] #22 - [Temporal Expiration Scenario](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-04-location-expiration.md) (Sets expiration constraints)
 
 ### Required Features
-- [ ] #1 - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-01-geo-location.md) (Provides the timing properties and validation constraints for the geo-location container)
+- [ ] #1 - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-06-geo-location-grouping.md) (Provides the timing properties and validation constraints for the geo-location container)
 
 ## Source References
 Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang)

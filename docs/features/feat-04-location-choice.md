@@ -1,6 +1,6 @@
 ---
 title: "Location Choice"
-epic: "epic-01-geo-location"
+epic: "epic-02-geo-location"
 type: "feature"
 interface_type: "ui"
 generation_mode: "subagent"
@@ -13,7 +13,7 @@ schema_containers:
 # Feature: Location Choice
 
 ## Parent Epic
-- [ ] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
+- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Contains the timing attributes for geo-location)
 
 ## Description
 This feature specifies the Location Choice attributes.

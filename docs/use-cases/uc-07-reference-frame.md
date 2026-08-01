@@ -11,7 +11,7 @@ schema_containers:
 # Use Case: Configure Reference Frame
 
 ## Parent Epic
-- [ ] #5 - [Geo Location Epic](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-01-geo-location.md) (Provides the overarching system context for geographical location)
+- [ ] #5 - [Geo Location Epic](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-02-geo-location.md) (Provides the overarching system context for geographical location)
 
 ## 1. Actors
 - **Primary Actor:** User
@@ -65,10 +65,10 @@ The frame of reference ('reference-frame') defines what the location values refe
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
+- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-06-record-geolocation.md) (Records location coordinates)
 
 ### Required Features
-- [ ] #8 - [Feature: reference-frame](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-02-reference-frame.md) (Defines the UI and constraints for the reference-frame container)
+- [ ] #8 - [Feature: reference-frame](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-07-reference-frame.md) (Defines the UI and constraints for the reference-frame container)
 
 ## Source References
 Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang)

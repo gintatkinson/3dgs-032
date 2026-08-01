@@ -8,7 +8,7 @@ spec_source: "RFC 9179 Section 2.6"
 # User Story: Temporal Expiration Scenario
 
 ## Parent Epic
-- [ ] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Provides the foundational geo-location timing attributes)
+- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Provides the foundational geo-location timing attributes)
 
 ## Domain Object Mapping
 - **Primary Domain Objects:** GeoLocation
@@ -51,7 +51,7 @@ stateDiagram-v2
 valid-until: The timestamp for which this geo-location is valid until. If unspecified, the geo-location has no specific expiration time.
 
 ## Required Features Matrix
-- [ ] #1 - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-01-geo-location.md) (Provides the structural definition for the valid-until attribute)
+- [ ] #1 - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-06-geo-location-grouping.md) (Provides the structural definition for the valid-until attribute)
 
 ## Source References
 Structural Schema: [ietf-geo-location](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location.yang)

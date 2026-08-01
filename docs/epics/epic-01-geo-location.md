@@ -11,29 +11,29 @@ spec_source: "Project Constitution"
 This Epic defines the functional specifications for the `ietf-geo-location` schema module, which provides a standard grouping for specifying a geographic location on or around an astronomical object (e.g., Earth).
 
 ## 2. Requirements & Checklist
-- [ ] #1 - [geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-01-geo-location.md) (Container)
-- [ ] #2 - [reference-frame](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-02-reference-frame.md) (Container)
-- [ ] #3 - [geodetic-system](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-03-geodetic-system.md) (Container)
-- [ ] #11 - [location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-04-location-choice.md) (Choice)
-- [ ] #12 - [ellipsoid](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-05-location-ellipsoid.md) (Case)
-- [ ] #14 - [cartesian](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-06-location-cartesian.md) (Case)
-- [ ] #15 - [velocity](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-07-velocity.md) (Container)
+- [ ] #1 - [geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-06-geo-location-grouping.md) (Container)
+- [ ] #2 - [reference-frame](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-07-reference-frame.md) (Container)
+- [ ] #3 - [geodetic-system](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-08-geodetic-system.md) (Container)
+- [ ] #11 - [location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-09-location-choice.md) (Choice)
+- [ ] #12 - [ellipsoid](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-10-location-ellipsoid.md) (Case)
+- [ ] #14 - [cartesian](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-11-location-cartesian.md) (Case)
+- [ ] #15 - [velocity](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-12-velocity.md) (Container)
 
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-- [ ] #24 - [Geo Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-01-geo-location.md) (Defines timing interactions for geo-location nodes)
-- [ ] #25 - [Configure Reference Frame](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-02-reference-frame.md) (Defines the configuration of reference frames)
-- [ ] #26 - [Geodetic System](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-03-geodetic-system.md) (Defines interactions with the geodetic system)
-- [ ] #27 - [Location Choice](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-04-location-choice.md) (Defines the selection between coordinate schemes)
-- [ ] #28 - [Location Ellipsoid](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-05-location-ellipsoid.md) (Defines interactions for ellipsoid coordinates)
-- [ ] #29 - [Location Cartesian](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-06-location-cartesian.md) (Defines interactions for Cartesian coordinates)
-- [ ] #30 - [Velocity](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-07-velocity.md) (Defines motion and heading interactions)
+- [ ] #24 - [Geo Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-06-geo-location-grouping.md) (Defines timing interactions for geo-location nodes)
+- [ ] #25 - [Configure Reference Frame](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-07-reference-frame.md) (Defines the configuration of reference frames)
+- [ ] #26 - [Geodetic System](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-08-geodetic-system.md) (Defines interactions with the geodetic system)
+- [ ] #27 - [Location Choice](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-09-location-choice.md) (Defines the selection between coordinate schemes)
+- [ ] #28 - [Location Ellipsoid](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-10-location-ellipsoid.md) (Defines interactions for ellipsoid coordinates)
+- [ ] #29 - [Location Cartesian](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-11-location-cartesian.md) (Defines interactions for Cartesian coordinates)
+- [ ] #30 - [Velocity](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-12-velocity.md) (Defines motion and heading interactions)
 
 #### Associated User Stories
-- [ ] #21 - [Derive Speed and Heading](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-01-derive-speed-and-heading.md) (Supports deriving speed from velocity)
-- [ ] #22 - [Temporal Expiration Scenario](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-02-location-expiration.md) (Handles geo-location validity expiration)
-- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Saves location choices and coordinates)
+- [ ] #21 - [Derive Speed and Heading](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-02-derive-speed-and-heading.md) (Supports deriving speed from velocity)
+- [ ] #22 - [Temporal Expiration Scenario](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-04-location-expiration.md) (Handles geo-location validity expiration)
+- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-06-record-geolocation.md) (Saves location choices and coordinates)
 
 ## 3. Architecture
 

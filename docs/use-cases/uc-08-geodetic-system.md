@@ -11,7 +11,7 @@ schema_containers:
 # Use Case: Geodetic System
 
 ## Parent Epic
-- [ ] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
+- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Contains the timing attributes for geo-location)
 
 ## 1. Actors
 - **Primary Actor:** Application User
@@ -69,10 +69,10 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
+- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-06-record-geolocation.md) (Records location coordinates)
 
 ### Required Features
-- [ ] #9 - [Feature: Geodetic System](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-03-geodetic-system.md) (Specifies the Geodetic System attributes and their layout)
+- [ ] #9 - [Feature: Geodetic System](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-08-geodetic-system.md) (Specifies the Geodetic System attributes and their layout)
 
 ## Source References
 Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang)
