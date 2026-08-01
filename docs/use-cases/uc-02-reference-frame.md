@@ -65,7 +65,7 @@ The frame of reference ('reference-frame') defines what the location values refe
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #20 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
+- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
 
 ### Required Features
 - [ ] #8 - [Feature: reference-frame](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-02-reference-frame.md) (Defines the UI and constraints for the reference-frame container)

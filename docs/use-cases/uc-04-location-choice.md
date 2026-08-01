@@ -72,7 +72,7 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #20 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
+- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
 
 ### Required Features
 - [ ] #11 - [Feature: Location Choice](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-04-location-choice.md) (Specifies the UI, validation, and presentation details for the Location Choice)

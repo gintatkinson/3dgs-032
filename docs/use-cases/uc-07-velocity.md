@@ -74,7 +74,7 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #18 - [Derive Speed and Heading](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-01-derive-speed-and-heading.md) (Calculates velocity metrics)
+- [ ] #21 - [Derive Speed and Heading](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-01-derive-speed-and-heading.md) (Calculates velocity metrics)
 
 ### Required Features
 - [ ] #15 - [Velocity](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-07-velocity.md) (Specifies the velocity attributes for geo-location)

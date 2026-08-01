@@ -73,7 +73,7 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #20 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
+- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
 
 ### Required Features
 - [ ] #12 - [Feature: Location Ellipsoid](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-05-location-ellipsoid.md) (Specifies the UI properties for ellipsoidal coordinates)

@@ -69,7 +69,7 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #20 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
+- [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-03-record-geolocation.md) (Records location coordinates)
 
 ### Required Features
 - [ ] #9 - [Feature: Geodetic System](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-03-geodetic-system.md) (Specifies the Geodetic System attributes and their layout)

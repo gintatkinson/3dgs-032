@@ -69,7 +69,7 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #19 - [Temporal Expiration Scenario](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-02-location-expiration.md) (Sets expiration constraints)
+- [ ] #22 - [Temporal Expiration Scenario](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-02-location-expiration.md) (Sets expiration constraints)
 
 ### Required Features
 - [ ] #1 - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-01-geo-location.md) (Provides the timing properties and validation constraints for the geo-location container)
