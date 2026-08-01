@@ -111,6 +111,7 @@ The maximum weight capacity of the rack.
 The maximum power capacity of the rack.
 
 <!-- Coverage: column-number id max-allocated-power max-voltage racks relative-position row-number type rack-location -->
+<!-- Coverage: column-number id max-allocated-power max-voltage racks relative-position row-number type rack-location -->
 ## Source References
 Structural Schema: [ietf-ni-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: rack-attributes)
 Normative Specification: [RFC XXXX: A YANG Data Model for Network Inventory location.](https://datatracker.ietf.org/) (Clause: rack-attributes)

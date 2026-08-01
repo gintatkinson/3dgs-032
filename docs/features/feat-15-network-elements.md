@@ -24,7 +24,9 @@ This feature provides the specification for the Nwi_NetworkElements container an
 classDiagram
     note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref"
     class Nwi_NetworkInventory
-    class Nwi_NetworkElements
+    class Nwi_NetworkElements {
+        +List retrieveNetworkElements() "[1]"
+    }
     class Nwi_NetworkElement {
         +String ne-id "[1]"
         +String ne-type "[0..1]"
@@ -35,7 +37,9 @@ classDiagram
         +String mfg-name "[0..1]"
         +String product-name "[0..1]"
         +String product-rev "[0..1]"
-        +UUID getUuid()
+        +InventoryData collectInventory(String modelType) "[1]"
+        +InventoryData retrieveLocalConfig() "[1]"
+        +UUID getUuid() "[1]"
     }
     class Nwi_SoftwareRev {
         +String name "[1]"

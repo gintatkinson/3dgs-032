@@ -88,6 +88,7 @@ A reference to the location of the component.
 This type is used to reference a hardware location.
 
 <!-- Coverage: child component-ref contained-chassis location-ref locations-ref ne-ref parent -->
+<!-- Coverage: child component-ref contained-chassis location-ref locations-ref ne-ref parent -->
 ## Source References
 Structural Schema: [ietf-ni-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: Augmentations)
 Normative Specification: [RFC XXXX](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: Augmentations)

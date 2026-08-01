@@ -27,6 +27,8 @@ classDiagram
     class Nwi_NetworkElement
     class Nwi_Components
     class Nwi_Component {
+        +void assignUuid(UUID namespace, String uniqueName) "[1]"
+        +String assignUuid(String namespace, String uniqueName) "[1]"
         +String component-id "[1]"
         +String class "[1]"
         +String uuid "[0..1]"
@@ -45,6 +47,7 @@ classDiagram
         +String parent "[0..*]"
         +String parent-rel-pos "[0..1]"
         +Boolean is-main "[0..1]"
+        +Status populateAttributes(InventoryData data) "[1]"
     }
     class Nwi_SoftwareRev {
         +String name "[1]"

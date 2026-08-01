@@ -101,6 +101,7 @@ Grouping for facility-specific location information.
 - position: The position within the rack or shelf.
 
 <!-- Coverage: address city country-code postal-code state physical-address -->
+<!-- Coverage: address city country-code postal-code state physical-address -->
 ## Source References
 Structural Schema: [ietf-ni-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: facility-location)
 Normative Specification: [RFC 9179](https://datatracker.ietf.org/doc/rfc9179/) (Clause: facility-location)
