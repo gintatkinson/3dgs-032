@@ -3,6 +3,7 @@ title: "Device-level Inventory Collection"
 type: "user-story"
 generation_mode: "subagent"
 spec_source: "draft-ietf-ivy-network-inventory-yang"
+issue_id: 65
 ---
 
 # User Story: Device-level Inventory Collection

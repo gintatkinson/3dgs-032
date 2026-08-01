@@ -23,10 +23,12 @@ Top-level container for network inventory. It acts as the root layout and contai
 classDiagram
     note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref"
     class Nwi_NetworkInventory {
-        +Nwi_NetworkInventory requestNetworkInventory() "[1]"
-        +void updateInventory(String inventoryData) "[1]"
+        +Boolean requestNetworkInventory() "[1]"
+        +Boolean updateInventory(String inventoryData) "[1]"
     }
-    class Nwi_NetworkElements
+    class Nwi_NetworkElements {
+        +Boolean retrieveNetworkElements() "[1]"
+    }
     Nwi_NetworkInventory *-- Nwi_NetworkElements : contains
 ```
 

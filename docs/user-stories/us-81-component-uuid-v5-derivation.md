@@ -24,14 +24,13 @@ spec_source: "draft-ietf-ivy-network-inventory-yang"
 sequenceDiagram
     autonumber
     actor inventorySystem as "inventorySystem : InventorySystem"
+    actor uuidGenerator as "uuidGenerator : UuidGenerator"
     participant nwiComponent as "nwiComponent : Nwi_Component"
 
-    inventorySystem->>nwiComponent: assignUuid(namespace: UUID, uniqueName: String)
+    inventorySystem->>uuidGenerator: generateUuidV5(namespace: UUID, uniqueName: String)
+    uuidGenerator-->inventorySystem: derivedUuid : UUID
     alt [uuidIsNull == true]
-        Note over nwiComponent: Derive UUID v5 using SHA-1 hash of namespace and uniqueName
-        nwiComponent-->inventorySystem: status : Status
-    else [uuidIsNull == false]
-        nwiComponent-->inventorySystem: status : Status
+        Note over inventorySystem, nwiComponent: inventorySystem assigns derivedUuid to nwiComponent.uuid
     end
 ```
 

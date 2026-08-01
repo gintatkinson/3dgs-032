@@ -25,7 +25,7 @@ classDiagram
     note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref"
     class Nwi_NetworkInventory
     class Nwi_NetworkElements {
-        +List retrieveNetworkElements() "[1]"
+        +Boolean retrieveNetworkElements() "[1]"
     }
     class Nwi_NetworkElement {
         +String ne-id "[1]"

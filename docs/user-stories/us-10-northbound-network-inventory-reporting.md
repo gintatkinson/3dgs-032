@@ -27,8 +27,8 @@ sequenceDiagram
     participant nwiNetworkInventory as "nwiNetworkInventory : Nwi_NetworkInventory"
     participant nwiNetworkElements as "nwiNetworkElements : Nwi_NetworkElements"
 
-    higherLevelOss->>nwiNetworkInventory: requestNetworkInventory()
-    nwiNetworkInventory->>nwiNetworkElements: retrieveNetworkElements()
+    higherLevelOss->>nwiNetworkInventory: requestNetworkInventory
+    nwiNetworkInventory->>nwiNetworkElements: retrieveNetworkElements
     nwiNetworkElements-->nwiNetworkInventory: elements : List
     nwiNetworkInventory-->higherLevelOss: inventoryData : Nwi_NetworkInventory
 ```

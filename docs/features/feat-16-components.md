@@ -48,6 +48,7 @@ classDiagram
         +String parent-rel-pos "[0..1]"
         +Boolean is-main "[0..1]"
         +Status populateAttributes(InventoryData data) "[1]"
+        +UUID assignUuid(UUID namespace, String uniqueName) "[1]"
     }
     class Nwi_SoftwareRev {
         +String name "[1]"
