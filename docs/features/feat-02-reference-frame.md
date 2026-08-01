@@ -68,7 +68,7 @@ The `alternate-system` is the system in which the astronomical body and geodetic
 The `astronomical-body` is an astronomical body as named by the International Astronomical Union.
 
 ## Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang) (Clause: N/A)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/YangModels/yang/blob/main/standard/ietf/RFC/ietf-geo-location%402022-02-11.yang) (Clause: N/A)
 Normative Specification: [RFC 9179](https://datatracker.ietf.org/doc/html/rfc9179) (Clause: N/A)
 
 ## Logical UI & Layout Bindings

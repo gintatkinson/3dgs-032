@@ -54,5 +54,5 @@ valid-until: The timestamp for which this geo-location is valid until. If unspec
 - [x] #1 - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-06-geo-location-grouping.md) (Provides the structural definition for the valid-until attribute)
 
 ## Source References
-Structural Schema: [ietf-geo-location](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location.yang)
+Structural Schema: [ietf-geo-location](https://github.com/YangModels/yang/blob/main/standard/ietf/RFC/ietf-geo-location%402022-02-11.yang)
 Normative Specification: [RFC 9179 Section 2.6](https://www.rfc-editor.org/info/rfc9179)

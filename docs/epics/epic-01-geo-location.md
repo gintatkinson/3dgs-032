@@ -133,5 +133,5 @@ Position information can be highly sensitive. Access control mechanisms must res
 This module defines a grouping of a container object for specifying a location on or around an astronomical object (e.g., 'earth').
 
 ## 6. Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang) (Clause: N/A)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/YangModels/yang/blob/main/standard/ietf/RFC/ietf-geo-location%402022-02-11.yang) (Clause: N/A)
 Normative Specification: RFC 9179 (Clause: N/A)
