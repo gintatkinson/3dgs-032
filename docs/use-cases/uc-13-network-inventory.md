@@ -6,6 +6,7 @@ spec_source: "draft-ietf-ivy-network-inventory-yang"
 schema_containers:
   - path: "nwi:network-inventory"
     node_type: container
+issue_id: 64
 ---
 
 # Use Case: Network Inventory Root
@@ -72,9 +73,9 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #61 - [Hierarchical Inventory Aggregation](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/user-stories/us-11-hierarchical-inventory-aggregation.md) (Provides hierarchical inventory logic)
+- [ ] #61 - [Hierarchical Inventory Aggregation](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/user-stories/us-11-hierarchical-inventory-aggregation.md) (semantic linkage: implements the hierarchical aggregation scenario) (Provides hierarchical inventory logic)
 ### Required Features
-- [ ] #52 - [Network Inventory Root](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md) (semantic linkage: implements the Network Inventory Root container structure)
+- [ ] #52 - [Network Inventory Root](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md) (Provides the Network Inventory Root container structure)
 
 ## Source References
 Structural Schema: [ietf-network-inventory.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-network-inventory.yang)
