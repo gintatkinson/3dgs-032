@@ -3,12 +3,13 @@ title: "Component UUID v5 Derivation"
 type: "user-story"
 generation_mode: "subagent"
 spec_source: "draft-ietf-ivy-network-inventory-yang"
+issue_id: 69
 ---
 
 # User Story: Component UUID v5 Derivation
 
 ## Parent Epic
-- [ ] #TBD - [Network Inventory](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-03-network-inventory.md) (Derives unique identifiers for inventory structure)
+- [ ] #60 - [Network Inventory](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-03-network-inventory.md) (Derives unique identifiers for inventory structure)
 
 ## Domain Object Mapping
 - **Primary Domain Objects:** Nwi_Component
@@ -46,7 +47,7 @@ stateDiagram-v2
 The Universally Unique Identifier (UUID) of the inventory object, assigned by the server. Such identifiers are widely implemented with systems and guaranteed to be globally unique. If no value is discovered, the server MAY set the value of this node to a locally unique value in the operational state.
 
 ## Required Features Matrix
-- [ ] #TBD - [Components](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-16-components.md) (Requires UUID derivation for component identities)
+- [ ] #57 - [Components](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-16-components.md) (Requires UUID derivation for component identities)
 
 ## Source References
 Structural Schema: [ietf-network-inventory.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-network-inventory.yang)
