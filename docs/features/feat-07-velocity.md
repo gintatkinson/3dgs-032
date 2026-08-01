@@ -41,6 +41,11 @@ classDiagram
     Velocity --> VelocityCalculator
 
 
+    GeoLocation *-- Velocity
+    VelocityController --> GeoLocation : updates
+    VelocityCalculator --> Velocity : reads
+    GeoLocation *-- VelocityController : controller
+    GeoLocation *-- VelocityCalculator : calculator
 ```
 
 ## Interface Requirements

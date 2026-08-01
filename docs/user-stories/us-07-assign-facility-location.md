@@ -1,6 +1,7 @@
 ---
 title: "Assign Facility Location"
 type: "user-story"
+
 issue_id: 38
 generation_mode: "subagent"
 spec_source: "draft-ietf-ivy-network-inventory-location"
@@ -56,9 +57,9 @@ stateDiagram-v2
 "Network Elements (NEs) can be grouped by location to provide more information for network planning, deployment, and maintenance... The Network Inventory location model is to record physical locations, such as sites, building, equipment rooms, racks, and so on... The location model augments the base network inventory to enrich NEs with location information."
 
 ## Required Features Matrix
-- [ ] #31 - [Locations Feature](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-01-locations.md) (semantic linkage: Provides the base location container and registry)
-- [ ] #33 - [Facility Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-03-facility-location.md) (semantic linkage: Provides the specific facility details to be assigned)
-- [ ] #35 - [Network Element and Component Location Augments](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-05-ne-location.md) (semantic linkage: Provides the augmentation to network element to accept a location reference)
+- [ ] #31 - [Locations Feature](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-08-locations.md) (semantic linkage: Provides the base location container and registry)
+- [ ] #33 - [Facility Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-10-facility-location.md) (semantic linkage: Provides the specific facility details to be assigned)
+- [ ] #35 - [Network Element and Component Location Augments](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-12-ne-location.md) (semantic linkage: Provides the augmentation to network element to accept a location reference)
 
 ## Source References
 Structural Schema: [ietf-ni-location.yang](schema/ietf-ni-location.yang)

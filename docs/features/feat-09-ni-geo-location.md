@@ -1,5 +1,7 @@
 ---
 title: "Feature: Geo Location"
+issue_id: 32
+issue: "#32"
 epic: "#36"
 type: "feature"
 interface_type: "ui"
@@ -145,7 +147,7 @@ Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179) (Cl
 
 ## Logical UI & Layout Bindings
 - **Target LUI Component:** TableView
-- **Target Layout Container ID:** components_table
+- **Target Layout Container ID:** elements_view
 - **Data Source Bindings:**
   - `/nwi:network-inventory/nil:locations/nil:location/nil:geo-location`
   - `/nwi:network-inventory/nil:locations/nil:location/nil:geo-location/nil:geo-location`

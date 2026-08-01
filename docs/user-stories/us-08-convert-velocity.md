@@ -1,6 +1,7 @@
 ---
 title: "Velocity Conversion to Speed and Heading"
 type: "user-story"
+
 issue_id: 39
 generation_mode: "subagent"
 spec_source: "RFC 9179"
@@ -40,7 +41,7 @@ sequenceDiagram
 "If the object is in motion, the velocity vector describes this motion at the time given by the timestamp. For a formula to convert these values to speed and heading, see RFC 9179."
 
 ## Required Features Matrix
-- [ ] #15 - [Velocity](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-12-velocity.md) (Provides the v-north, v-east, v-up attributes and calculator interfaces required for the conversion)
+- [ ] #15 - [Velocity](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-07-velocity.md) (Provides the v-north, v-east, v-up attributes and calculator interfaces required for the conversion)
 
 ## Source References
 Structural Schema: [ietf-geo-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location.yang)

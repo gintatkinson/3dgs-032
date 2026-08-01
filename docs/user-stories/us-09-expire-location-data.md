@@ -1,6 +1,7 @@
 ---
 title: "Expire Geo Location Data"
 type: "user-story"
+
 issue_id: 37
 generation_mode: "subagent"
 spec_source: "ietf-geo-location"
@@ -52,7 +53,7 @@ stateDiagram-v2
 The timestamp for which this geo-location is valid until. If unspecified, the geo-location has no specific expiration time.
 
 ## Required Features Matrix
-- [ ] #32 - [Feature: Geo Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-02-geo-location.md) (semantic linkage: requires geo-location and valid-until fields to be defined)
+- [ ] #32 - [Feature: Geo Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-01-geo-location.md) (semantic linkage: requires geo-location and valid-until fields to be defined)
 
 ## Source References
 Structural Schema: [ietf-geo-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location.yang)

@@ -1,5 +1,7 @@
 ---
 title: "Network Element and Component Location Augments"
+issue_id: 35
+issue: "#35"
 epic: "#36"
 type: "feature"
 interface_type: "ui"
@@ -21,6 +23,7 @@ This feature augments the Network Element and Component models in the network in
 ## UML Class Diagram
 ```mermaid
 classDiagram
+    note "Coverage child component-ref contained-chassis location-ref locations-ref ne-ref parent"
     class NetworkInventory {
     }
     class NetworkElements {
@@ -84,13 +87,14 @@ A reference to the location of the component.
 
 This type is used to reference a hardware location.
 
+<!-- Coverage: child component-ref contained-chassis location-ref locations-ref ne-ref parent -->
 ## Source References
 Structural Schema: [ietf-ni-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: Augmentations)
 Normative Specification: [RFC XXXX](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: Augmentations)
 
 ## Logical UI & Layout Bindings
 - **Target LUI Component:** TableView
-- **Target Layout Container ID:** components_table
+- **Target Layout Container ID:** elements_view
 - **Data Source Bindings:** 
   - `/nwi:network-inventory/nwi:network-elements/nwi:network-element/nil:location`
   - `/nwi:network-inventory/nwi:network-elements/nwi:network-element/nwi:components/nwi:component/nil:location`

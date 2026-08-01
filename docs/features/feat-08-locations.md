@@ -1,5 +1,7 @@
 ---
 title: "Locations Feature"
+issue_id: 31
+issue: "#31"
 epic: "#36"
 type: "feature"
 interface_type: "ui"
@@ -22,13 +24,29 @@ This feature provides the capability to manage a list of locations within the ne
 ## UML Class Diagram
 ```mermaid
 classDiagram
-    class NetworkInventory
+    class NetworkInventory {
+        +Status assignLocation(String elementId, String locationRef) "[1]"
+    }
     class Locations
     class Location {
         +String name "[1]"
         +String description "[0..1]"
     }
+    class LocationRegistry {
+        +Location getLocation(String name) "[0..1]"
+        +void addLocation(Location loc) "[1]"
+        +Boolean validateLocation(String locationRef) "[1]"
+        +DateTime getValidUntilTime(String locationId) "[0..1]"
+        +void markAsExpired(String locationId) "[1]"
+    }
+    class LocationService {
+        +void assignLocation(NetworkElement ne, Location loc) "[1]"
+        +void evaluateExpiration(DateTime currentTime) "[1]"
+    }
     NetworkInventory *-- Locations : locations
+    Locations *-- Location : location
+    LocationRegistry --> Locations : manages
+    LocationService --> LocationRegistry : uses
     Locations *-- Location : location
 ```
 
@@ -98,7 +116,7 @@ Normative Specification: [RFC XXXX](https://datatracker.ietf.org/doc/draft-ietf-
 
 ## Logical UI & Layout Bindings
 - **Target LUI Component:** TableView
-- **Target Layout Container ID:** components_table
+- **Target Layout Container ID:** elements_view
 - **Data Source Bindings:** /nwi:network-inventory/nil:locations/nil:location
 
 > [!WARNING]

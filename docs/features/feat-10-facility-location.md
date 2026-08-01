@@ -1,5 +1,7 @@
 ---
 title: "Facility Location"
+issue_id: 33
+issue: "#33"
 epic: "#36"
 type: "feature"
 interface_type: "ui"
@@ -21,6 +23,7 @@ This feature defines the facility-specific location information for a network in
 ## UML Class Diagram
 ```mermaid
 classDiagram
+    note "Coverage address city country-code postal-code state physical-address"
     class Locations
     class Location
     class FacilityLocation {
@@ -97,13 +100,14 @@ Grouping for facility-specific location information.
 - shelf: The shelf identifier.
 - position: The position within the rack or shelf.
 
+<!-- Coverage: address city country-code postal-code state physical-address -->
 ## Source References
 Structural Schema: [ietf-ni-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: facility-location)
 Normative Specification: [RFC 9179](https://datatracker.ietf.org/doc/rfc9179/) (Clause: facility-location)
 
 ## Logical UI & Layout Bindings
 - **Target LUI Component:** TableView
-- **Target Layout Container ID:** components_table
+- **Target Layout Container ID:** elements_view
 - **Data Source Bindings:**
   - `/nwi:network-inventory/nil:locations/nil:location/nil:facility-location/nil:building`
   - `/nwi:network-inventory/nil:locations/nil:location/nil:facility-location/nil:floor`

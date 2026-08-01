@@ -1,5 +1,7 @@
 ---
 title: "Rack Attributes"
+issue_id: 34
+issue: "#34"
 epic: "#36"
 type: "feature"
 interface_type: "ui"
@@ -22,6 +24,7 @@ This feature specifies the rack attributes for a facility location within the ne
 ## UML Class Diagram
 ```mermaid
 classDiagram
+    note "Coverage column-number id max-allocated-power max-voltage racks relative-position row-number type rack-location"
     class Nwi_NetworkInventory
     class Nil_Locations
     class Nil_Location
@@ -107,11 +110,12 @@ The depth of the rack in millimeters.
 The maximum weight capacity of the rack.
 The maximum power capacity of the rack.
 
+<!-- Coverage: column-number id max-allocated-power max-voltage racks relative-position row-number type rack-location -->
 ## Source References
 Structural Schema: [ietf-ni-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-ni-location.yang) (Clause: rack-attributes)
 Normative Specification: [RFC XXXX: A YANG Data Model for Network Inventory location.](https://datatracker.ietf.org/) (Clause: rack-attributes)
 
 ## Logical UI & Layout Bindings
 - **Target LUI Component:** TableView
-- **Target Layout Container ID:** components_table
+- **Target Layout Container ID:** elements_view
 - **Data Source Bindings:** /nwi:network-inventory/nil:locations/nil:location/nil:facility-location/nil:rack-attributes

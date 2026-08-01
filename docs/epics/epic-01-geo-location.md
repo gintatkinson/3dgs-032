@@ -11,6 +11,7 @@ spec_source: "Project Constitution"
 This Epic defines the functional specifications for the `ietf-geo-location` schema module, which provides a standard grouping for specifying a geographic location on or around an astronomical object (e.g., Earth).
 
 ## 2. Requirements & Checklist
+- [ ] #36 - [Parent Epic: epic-02-ni-location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-02-ni-location.md)
 - [ ] #1 - [geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-06-geo-location-grouping.md) (Container)
 - [ ] #2 - [reference-frame](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-07-reference-frame.md) (Container)
 - [ ] #3 - [geodetic-system](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-08-geodetic-system.md) (Container)
