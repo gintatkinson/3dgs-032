@@ -12,7 +12,7 @@ issue_id: 64
 # Use Case: Network Inventory Root
 
 ## Parent Epic
-- [ ] #1 - [Network Inventory](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-03-network-inventory.md) (semantic linkage: Network Inventory Root container is part of the Network Inventory bounded context)
+- [x] #1 - [Network Inventory](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-03-network-inventory.md) (semantic linkage: Network Inventory Root container is part of the Network Inventory bounded context)
 
 ## 1. Actors
 - **Primary Actor:** NetworkManagementSystem
@@ -73,10 +73,10 @@ stateDiagram-v2
 
 ## 8. Realization Matrix
 ### Required User Stories
-- [ ] #61 - [Hierarchical Inventory Aggregation](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/user-stories/us-11-hierarchical-inventory-aggregation.md) (Provides hierarchical inventory logic)
+- [ ] #61 - [Hierarchical Inventory Aggregation](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-11-hierarchical-inventory-aggregation.md) (Provides hierarchical inventory logic)
 ### Required Features
-- [ ] #52 - [Network Inventory Root](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md) (Provides the Network Inventory Root container structure)
+- [ ] #52 - [Network Inventory Root](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-14-network-inventory.md) (Provides the Network Inventory Root container structure)
 
 ## Source References
-Structural Schema: [ietf-network-inventory.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-network-inventory.yang)
-Normative Specification: [draft-ietf-ivy-network-inventory-yang.txt](file:///Users/perkunas/jail/3dgs-032/docs/draft-ietf-ivy-network-inventory-yang.txt)
+Structural Schema: [ietf-network-inventory.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-network-inventory.yang)
+Normative Specification: [draft-ietf-ivy-network-inventory-yang.txt](https://github.com/gintatkinson/3dgs-032/blob/main/docs/draft-ietf-ivy-network-inventory-yang.txt)

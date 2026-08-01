@@ -8,7 +8,7 @@ spec_source: "draft-ietf-ivy-network-inventory-yang"
 # User Story: Northbound Network Inventory Reporting
 
 ## Parent Epic
-- [ ] #1 - [Network Inventory](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-03-network-inventory.md) (Provides the base epic for the inventory capability)
+- [x] #1 - [Network Inventory](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-03-network-inventory.md) (Provides the base epic for the inventory capability)
 
 ## Domain Object Mapping
 - **Primary Domain Objects:** `Nwi_NetworkInventory`, `Nwi_NetworkElements`
@@ -40,8 +40,8 @@ sequenceDiagram
 "This information can be provided by a network controller to a higher level hierarchical network controller, to an Inventory OSS or to any other type of application which needs to discover the network inventory information. For example, in the context of ACTN, the network inventory YANG data model can be used at the MPI interfaces, as defined in [RFC8453]"
 
 ## Required Features Matrix
-- [ ] #14 - [Network Inventory Root](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md) (Provides the root container layout for inventory data)
-- [ ] #15 - [Network Elements](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-15-network-elements.md) (Provides the detailed list of network elements to report)
+- [ ] #14 - [Network Inventory Root](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-14-network-inventory.md) (Provides the root container layout for inventory data)
+- [ ] #15 - [Network Elements](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-15-network-elements.md) (Provides the detailed list of network elements to report)
 
 ## Source References
 Structural Schema: [ietf-network-inventory.yang](https://datatracker.ietf.org/doc/html/draft-ietf-ivy-network-inventory-yang)

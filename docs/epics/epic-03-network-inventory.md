@@ -23,15 +23,15 @@ This Bounded Context defines a base model for retrieving network inventory, conf
 
 #### Associated Use Cases
 - [ ] #TBD - [Retrieve Network Inventory](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-retrieve-inventory.md)
-- [ ] #64 - [Network Inventory Root](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-13-network-inventory.md) (semantic linkage justification)
-- [ ] #50 - [Components](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-16-components.md) (semantic linkage justification)
-- [ ] #[IssueID] - [Manage Network Elements](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-99-network-elements.md) (semantic linkage justification)
+- [ ] #64 - [Network Inventory Root](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-13-network-inventory.md) (Provides root container inventory access)
+- [ ] #50 - [Components](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-16-components.md) (Provides component details)
+- [ ] #TBD - [Manage Network Elements](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-99-network-elements.md) (Provides elements logic)
 
 #### Associated User Stories
 - [ ] #TBD - [View Network Elements](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-view-network-elements.md)
-- [ ] #66 - [Northbound Network Inventory Reporting](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-10-northbound-network-inventory-reporting.md) (semantic linkage justification)
-- [ ] #65 - [Device-level Inventory Collection](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-12-device-inventory-collection.md) (semantic linkage justification)
-- [ ] #67 - [Component UUID v5 Derivation](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-81-component-uuid-v5-derivation.md) (semantic linkage justification)
+- [ ] #66 - [Northbound Network Inventory Reporting](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-10-northbound-network-inventory-reporting.md) (Provides reporting functionality)
+- [ ] #65 - [Device-level Inventory Collection](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-12-device-inventory-collection.md) (Provides device collection mechanism)
+- [ ] #67 - [Component UUID v5 Derivation](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-81-component-uuid-v5-derivation.md) (Provides UUID v5 generation capability)
 
 ## 3. Architecture
 

@@ -27,7 +27,7 @@ This Epic defines the functional specifications for the `ietf-geo-location` sche
 - [ ] #12 - [Location Ellipsoid](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-05-location-ellipsoid.md) (Realizes Epic component)
 - [ ] #14 - [Location Cartesian](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-06-location-cartesian.md) (Realizes Epic component)
 - [ ] #15 - [Velocity](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-07-velocity.md) (Realizes Epic component)
-- [ ] #[IssueID] - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-13-geo-location.md) (semantic linkage justification)
+- [ ] #TBD - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-13-geo-location.md) (Provides Geo-Location timing logic)
 
 ### Associated Use Cases & User Stories
 
