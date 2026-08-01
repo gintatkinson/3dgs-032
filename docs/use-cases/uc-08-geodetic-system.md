@@ -6,12 +6,13 @@ spec_source: "RFC 9179"
 schema_containers:
   - path: "ietf-geo-location:geo-location/reference-frame/geodetic-system"
     node_type: container
+issue_id: 26
 ---
 
 # Use Case: Geodetic System
 
 ## Parent Epic
-- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Contains the timing attributes for geo-location)
+- [x] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Contains the timing attributes for geo-location)
 
 ## 1. Actors
 - **Primary Actor:** Application User
@@ -75,5 +76,5 @@ stateDiagram-v2
 - [ ] #9 - [Feature: Geodetic System](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-08-geodetic-system.md) (Specifies the Geodetic System attributes and their layout)
 
 ## Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang)
 Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179)

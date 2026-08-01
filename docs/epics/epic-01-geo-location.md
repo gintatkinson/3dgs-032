@@ -19,6 +19,13 @@ This Epic defines the functional specifications for the `ietf-geo-location` sche
 - [ ] #12 - [ellipsoid](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-10-location-ellipsoid.md) (Case)
 - [ ] #14 - [cartesian](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-11-location-cartesian.md) (Case)
 - [ ] #15 - [velocity](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-12-velocity.md) (Container)
+- [ ] #[IssueID] - [Geo-Location Timing Attributes](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-01-geo-location.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Feature: reference-frame](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-02-reference-frame.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Geodetic System](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-03-geodetic-system.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Location Choice](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-04-location-choice.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Location Ellipsoid](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-05-location-ellipsoid.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Location Cartesian](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-06-location-cartesian.md) (semantic linkage justification)
+- [ ] #[IssueID] - [Velocity](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-07-velocity.md) (semantic linkage justification)
 
 ### Associated Use Cases & User Stories
 
@@ -30,11 +37,15 @@ This Epic defines the functional specifications for the `ietf-geo-location` sche
 - [ ] #28 - [Location Ellipsoid](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-10-location-ellipsoid.md) (Defines interactions for ellipsoid coordinates)
 - [ ] #29 - [Location Cartesian](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-11-location-cartesian.md) (Defines interactions for Cartesian coordinates)
 - [ ] #30 - [Velocity](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-12-velocity.md) (Defines motion and heading interactions)
+- [ ] #43 - [Manage Network Inventory Locations](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-01-locations.md) (semantic linkage justification)
+- [ ] #44 - [Geo-Location (System Interaction)](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-02-geo-location.md) (semantic linkage justification)
 
 #### Associated User Stories
 - [ ] #21 - [Derive Speed and Heading](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-02-derive-speed-and-heading.md) (Supports deriving speed from velocity)
 - [ ] #22 - [Temporal Expiration Scenario](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-04-location-expiration.md) (Handles geo-location validity expiration)
 - [ ] #23 - [Record Geo-Location Coordinates](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-06-record-geolocation.md) (Saves location choices and coordinates)
+- [ ] #39 - [Velocity Conversion to Speed and Heading](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-08-convert-velocity.md) (semantic linkage justification)
+- [ ] #37 - [Expire Geo Location Data](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-09-expire-location-data.md) (semantic linkage justification)
 
 ## 3. Architecture
 

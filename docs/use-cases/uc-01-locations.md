@@ -6,6 +6,7 @@ spec_source: "draft-ietf-ivy-network-inventory-location"
 schema_containers:
   - path: "ietf-ni-location:locations"
     node_type: container
+issue_id: 43
 ---
 
 # Use Case: Manage Network Inventory Locations

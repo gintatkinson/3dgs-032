@@ -10,7 +10,7 @@ spec_source: "RFC 9179"
 # User Story: Velocity Conversion to Speed and Heading
 
 ## Parent Epic
-- [ ] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
+- [x] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
 
 ## Domain Object Mapping
 - **Primary Domain Objects:** Velocity
@@ -44,6 +44,6 @@ sequenceDiagram
 - [ ] #15 - [Velocity](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-07-velocity.md) (Provides the v-north, v-east, v-up attributes and calculator interfaces required for the conversion)
 
 ## Source References
-Structural Schema: [ietf-geo-location.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location.yang)
+Structural Schema: [ietf-geo-location.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location.yang)
 Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179)
 

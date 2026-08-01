@@ -6,6 +6,7 @@ spec_source: "draft-ietf-ivy-network-inventory-location"
 schema_containers:
   - path: "ietf-ni-location:locations/location/facility-location"
     node_type: container
+issue_id: 45
 ---
 
 # Use Case: Facility Location

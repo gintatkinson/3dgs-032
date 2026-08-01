@@ -6,6 +6,7 @@ spec_source: "draft-ietf-ivy-network-inventory-location"
 schema_containers:
   - path: "ietf-network-inventory:network-elements/network-element"
     node_type: container
+issue_id: 47
 ---
 
 # Use Case: Assign Location to Network Element

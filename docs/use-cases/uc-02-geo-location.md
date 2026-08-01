@@ -6,6 +6,7 @@ spec_source: "RFC 9179"
 schema_containers:
   - path: "ietf-ni-location:locations/location/geo-location"
     node_type: container
+issue_id: 44
 ---
 
 # Use Case: Geo-Location (System Interaction)

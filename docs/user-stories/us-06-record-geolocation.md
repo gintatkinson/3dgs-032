@@ -8,7 +8,7 @@ spec_source: "RFC 9179 Section 2.2"
 # User Story: Record Geo-Location Coordinates
 
 ## Parent Epic
-- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Contains the overarching specification for geo-location records)
+- [x] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Contains the overarching specification for geo-location records)
 
 ## Domain Object Mapping
 - **Primary Domain Objects:** GeoLocation, Location, Ellipsoid, Cartesian
@@ -47,5 +47,5 @@ sequenceDiagram
 - [ ] #14 - [Location Cartesian](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-11-location-cartesian.md) (Provides x, y, z coordinate attributes)
 
 ## Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang)
 Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179)

@@ -6,6 +6,7 @@ spec_source: "draft-ietf-ivy-network-inventory-location"
 schema_containers:
   - path: "ietf-ni-location:locations/location/facility-location/rack-attributes"
     node_type: container
+issue_id: 46
 ---
 
 # Use Case: Rack Attributes

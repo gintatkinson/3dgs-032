@@ -16,14 +16,26 @@ This Epic defines the functional specification for adding physical and geographi
 - [ ] #33 - [Location Facility Information](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-03-facility-location.md) (Facility location and rack attributes)
 - [ ] #35 - [Network Element Location Association](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-05-ne-location.md) (Network element location augment)
 - [ ] #34 - [Component Location Association](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-04-rack-attributes.md) (Component location augment)
+- [ ] #31 - [Locations Feature](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-08-locations.md) (semantic linkage justification)
+- [ ] #32 - [Feature: Geo Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-09-ni-geo-location.md) (semantic linkage justification)
+- [ ] #33 - [Facility Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-10-facility-location.md) (semantic linkage justification)
+- [ ] #34 - [Rack Attributes](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-11-rack-attributes.md) (semantic linkage justification)
+- [ ] #35 - [Network Element and Component Location Augments](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-12-ne-location.md) (semantic linkage justification)
 
 ### Associated Use Cases & User Stories
 
 #### Associated Use Cases
-- [ ] #1 - Manage Network Inventory Locations (https://github.com/repo/blob/main/docs/use-cases/uc-01-manage-locations.md)
+- [x] #1 - Manage Network Inventory Locations (https://github.com/repo/blob/main/docs/use-cases/uc-01-manage-locations.md)
+- [ ] #43 - [Manage Network Inventory Locations](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-01-locations.md) (semantic linkage justification)
+- [ ] #44 - [Geo-Location (System Interaction)](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-02-geo-location.md) (semantic linkage justification)
+- [ ] #45 - [Facility Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-03-facility-location.md) (semantic linkage justification)
+- [ ] #46 - [Rack Attributes](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-04-rack-attributes.md) (semantic linkage justification)
+- [ ] #47 - [Assign Location to Network Element](https://github.com/gintatkinson/3dgs-032/blob/main/docs/use-cases/uc-05-ne-location.md) (semantic linkage justification)
 
 #### Associated User Stories
-- [ ] #1 - As an operator, I want to assign a physical location to a network element (https://github.com/repo/blob/main/docs/user-stories/us-01-assign-ne-location.md)
+- [x] #1 - As an operator, I want to assign a physical location to a network element (https://github.com/repo/blob/main/docs/user-stories/us-01-assign-ne-location.md)
+- [ ] #38 - [Assign Facility Location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-07-assign-facility-location.md) (semantic linkage justification)
+- [ ] #37 - [Expire Geo Location Data](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-09-expire-location-data.md) (semantic linkage justification)
 
 ## 3. Architecture
 

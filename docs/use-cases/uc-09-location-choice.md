@@ -6,12 +6,13 @@ spec_source: "RFC 9179 Section 2.2"
 schema_containers:
   - path: "ietf-geo-location:geo-location/location"
     node_type: choice
+issue_id: 27
 ---
 
 # Use Case: Location Choice
 
 ## Parent Epic
-- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Provides the overarching goal for locating an entity geographically)
+- [x] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Provides the overarching goal for locating an entity geographically)
 
 ## 1. Actors
 - **Primary Actor:** User or Client Application
@@ -78,5 +79,5 @@ stateDiagram-v2
 - [ ] #11 - [Feature: Location Choice](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-09-location-choice.md) (Specifies the UI, validation, and presentation details for the Location Choice)
 
 ## Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang)
 Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179)

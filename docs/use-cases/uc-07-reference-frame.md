@@ -6,12 +6,13 @@ spec_source: "RFC 9179 Section 2.1"
 schema_containers:
   - path: "ietf-geo-location:geo-location/reference-frame"
     node_type: container
+issue_id: 25
 ---
 
 # Use Case: Configure Reference Frame
 
 ## Parent Epic
-- [ ] #5 - [Geo Location Epic](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-02-geo-location.md) (Provides the overarching system context for geographical location)
+- [x] #5 - [Geo Location Epic](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-02-geo-location.md) (Provides the overarching system context for geographical location)
 
 ## 1. Actors
 - **Primary Actor:** User

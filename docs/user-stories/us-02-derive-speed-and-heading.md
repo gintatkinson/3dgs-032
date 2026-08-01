@@ -8,7 +8,7 @@ spec_source: "RFC 9179 Section 2.3"
 # User Story: Derive Speed and Heading
 
 ## Parent Epic
-- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-02-geo-location.md) (Contains the base geo-location requirements under which velocity is calculated)
+- [x] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/blob/main/docs/epics/epic-02-geo-location.md) (Contains the base geo-location requirements under which velocity is calculated)
 
 ## Domain Object Mapping
 - **Primary Domain Objects:** Velocity
@@ -44,8 +44,8 @@ sequenceDiagram
 To derive the two-dimensional heading and speed, one would use the following formulas: speed = sqrt(v-north^2 + v-east^2), heading = arctan(v-east / v-north)
 
 ## Required Features Matrix
-- [ ] #13 - [Velocity](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-12-velocity.md) (Provides the base attributes v-north and v-east used for derivation)
+- [x] #13 - [Velocity](https://github.com/gintatkinson/3dgs-032/blob/main/docs/features/feat-12-velocity.md) (Provides the base attributes v-north and v-east used for derivation)
 
 ## Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang)
 Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179)

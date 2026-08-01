@@ -6,12 +6,13 @@ spec_source: "RFC 9179"
 schema_containers:
   - path: "ietf-geo-location:geo-location/location/cartesian"
     node_type: container
+issue_id: 29
 ---
 
 # Use Case: Location Cartesian
 
 ## Parent Epic
-- [ ] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Provides the overarching geo-location entity context)
+- [x] #5 - [epic-02-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-02-geo-location.md) (Provides the overarching geo-location entity context)
 
 ## 1. Actors
 - **Primary Actor:** Network Administrator / System Client
@@ -75,5 +76,5 @@ stateDiagram-v2
 - [ ] #14 - [Location Cartesian](https://github.com/gintatkinson/3dgs-032/tree/main/docs/features/feat-11-location-cartesian.md) (Specifies the Cartesian attributes, schemas, and UI layout for the Cartesian location choice)
 
 ## Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang)
 Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179)
