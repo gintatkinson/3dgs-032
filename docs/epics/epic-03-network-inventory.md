@@ -32,6 +32,7 @@ This Bounded Context defines a base model for retrieving network inventory, conf
 - [ ] #66 - [Northbound Network Inventory Reporting](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-10-northbound-network-inventory-reporting.md) (Provides reporting functionality)
 - [ ] #65 - [Device-level Inventory Collection](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-12-device-inventory-collection.md) (Provides device collection mechanism)
 - [ ] #67 - [Component UUID v5 Derivation](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-81-component-uuid-v5-derivation.md) (Provides UUID v5 generation capability)
+- [ ] #65 - [Device-level Inventory Collection](https://github.com/gintatkinson/3dgs-032/blob/main/docs/user-stories/us-01-device-inventory-collection.md) (defines the behavioral scenario for extracting physical network element inventory)
 
 ## 3. Architecture
 
