@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-08-01T05:43:56.556185Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "2cade552c50417dc84515f047ad63f5d323326f7"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-02-reference-frame.md class 'ReferenceFrame' method '\"[0..1]\"' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-02-reference-frame.md class 'ReferenceFrame' method '\"[0..1]\"' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

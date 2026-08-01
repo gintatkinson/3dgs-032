@@ -13,7 +13,7 @@ schema_containers:
 # Feature: reference-frame
 
 ## Parent Epic
-- [ ] #ID - [IETF Geo Location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the reference-frame as part of geo-location subsystem)
+- [ ] #5 - [Geo Location Epic](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Defines the reference frame subsystem context)
 
 ## Description
 The Frame of Reference for the location values.
