@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-08-01T07:48:30.494064Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "7d791c63b7d33c1758aa17949bde446104e17d80"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "User Story us-81-component-uuid-v5-derivation.md sequence diagram message 'inventorySystem->>nwiComponent: assignUuid(namespace: UUID, uniqueName: String)' calls operation 'assignUuid' which is not defined on class 'Nwi_Component' in any class diagram.",
+      "Use Case uc-13-network-inventory.md contains a checklist item with a missing or invalid parenthetical semantic justification at the end: '- [ ] #61 - [Hierarchical Inventory Aggregation](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/user-stories/us-11-hierarchical-inventory-aggregation.md)'."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

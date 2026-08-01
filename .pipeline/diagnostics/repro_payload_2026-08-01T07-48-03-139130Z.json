@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-08-01T07:48:03.139130Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "7d791c63b7d33c1758aa17949bde446104e17d80"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "User Story us-10-northbound-network-inventory-reporting.md sequence diagram message 'higherLevelOss->>nwiNetworkInventory: requestNetworkInventory()' calls operation 'requestNetworkInventory' which is not defined on class 'Nwi_NetworkInventory' in any class diagram.",
+      "User Story us-10-northbound-network-inventory-reporting.md sequence diagram message 'nwiNetworkInventory->>nwiNetworkElements: retrieveNetworkElements()' calls operation 'retrieveNetworkElements' which is not defined on class 'Nwi_NetworkElements' in any class diagram.",
+      "User Story us-01-hierarchical-inventory-aggregation.md sequence diagram message 'hierarchicalController->>nwiNetworkInventory: updateInventory(inventoryData: String)' calls operation 'updateInventory' which is not defined on class 'Nwi_NetworkInventory' in any class diagram.",
+      "Use Case uc-13-network-inventory.md contains a checklist item with a missing or invalid parenthetical semantic justification at the end: '- [ ] #61 - [Hierarchical Inventory Aggregation](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/user-stories/us-11-hierarchical-inventory-aggregation.md)'."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

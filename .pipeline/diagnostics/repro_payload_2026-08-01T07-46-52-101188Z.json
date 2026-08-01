@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-08-01T07:46:52.101188Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "7a529b185f508c87a38dd1c5018c90e8a9a7d621"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-15-network-elements.md class 'Nwi_NetworkElements' method 'getElements' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-15-network-elements.md class 'Nwi_NetworkElement' method 'getUuid' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-14-network-inventory.md class 'Nwi_NetworkInventory' method 'getNetworkInventory' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-08-locations.md contains a syntax conflict in classDiagram on line 4: '} {'. Curly braces '{}' inside members/attributes are prohibited due to Mermaid parse errors. Use standard attribute notation or separate notes for constraints.",
+      "Feature feat-08-locations.md class 'NetworkInventory' attribute '{' has invalid type '}'. UML primitive types must be Boolean, Decimal64, Integer, Real, String (case-sensitive), or reference another class.",
+      "Feature feat-08-locations.md class 'NetworkInventory' attribute '{' is missing a valid UML visibility prefix (#, +, -, ~).",
+      "Feature feat-08-locations.md class 'NetworkInventory' attribute '{' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-08-locations.md class 'NetworkInventory' method 'assignLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-08-locations.md class 'LocationRegistry' method 'validateLocation' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-08-locations.md class 'LocationRegistry' method 'getValidUntilTime' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "User Story us-01-hierarchical-inventory-aggregation.md sequence diagram message 'hierarchicalController->>nwiNetworkInventory: updateInventory(inventoryData: String)' calls operation 'updateInventory' which is not defined on class 'Nwi_NetworkInventory' in any class diagram.",
+      "Use Case uc-13-network-inventory.md Realization Matrix contains no User Story checkboxes under '### Required User Stories'.",
+      "docs/use-cases: duplicate ordinal - 3 is claimed by 2 files (uc-03-components.md, uc-03-facility-location.md). Ordinals must be unique, because backlog reconciliation and Epic checklists reference specifications by number.",
+      "docs/use-cases: duplicate ordinal - 13 is claimed by 2 files (uc-13-network-elements.md, uc-13-network-inventory.md). Ordinals must be unique, because backlog reconciliation and Epic checklists reference specifications by number."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}
