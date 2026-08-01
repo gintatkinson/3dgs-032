@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "schema_name": "ietf-network-inventory",
+    "yang_source": "/Users/perkunas/jail/3dgs-032/schema/ietf-network-inventory.yang"
+  },
+  "theme": {
+    "modes": [
+      "light",
+      "dark",
+      "system"
+    ]
+  },
+  "navigation": {
+    "sidebar": {
+      "collapsible": true,
+      "default_expanded": true
+    }
+  },
+  "layout": {
+    "root_container": {
+      "type": "SidebarLayout",
+      "id": "main_shell",
+      "children": [
+        {
+          "type": "HierarchyTree",
+          "id": "resource_tree",
+          "props": {
+            "hierarchy": [
+              {
+                "id": "network-inventory",
+                "label": "Network Inventory",
+                "children": [
+                  {
+                    "id": "network-elements",
+                    "label": "Network Elements",
+                    "children": [
+                      {
+                        "id": "network-element",
+                        "label": "Network Element",
+                        "children": [
+                          {
+                            "id": "software-rev",
+                            "label": "Software Rev",
+                            "children": [
+                              {
+                                "id": "patch",
+                                "label": "Patch"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "components",
+                            "label": "Components",
+                            "children": [
+                              {
+                                "id": "component",
+                                "label": "Component",
+                                "children": [
+                                  {
+                                    "id": "software-rev",
+                                    "label": "Software Rev",
+                                    "children": [
+                                      {
+                                        "id": "patch",
+                                        "label": "Patch"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "bindings": {
+            "selection_target": "selected_managed_object"
+          }
+        },
+        {
+          "type": "ResizableSplitter",
+          "id": "workspace_split",
+          "props": {
+            "axis": "horizontal",
+            "resizable": true
+          },
+          "children": [
+            {
+              "type": "TopologyMap",
+              "id": "topology_pane"
+            },
+            {
+              "type": "ResizableSplitter",
+              "id": "lower_split",
+              "props": {
+                "axis": "horizontal",
+                "resizable": true
+              },
+              "children": [
+                {
+                  "type": "DensityTable",
+                  "id": "elements_view"
+                },
+                {
+                  "type": "TabbedContainer",
+                  "id": "details_and_relations_tab",
+                  "children": [
+                    {
+                      "type": "TableView",
+                      "id": "components_table",
+                      "props": {
+                        "label": "token:layout.labels.components"
+                      }
+                    },
+                    {
+                      "type": "TableView",
+                      "id": "relation_a_table",
+                      "props": {
+                        "label": "token:layout.labels.relation_a"
+                      }
+                    },
+                    {
+                      "type": "TableView",
+                      "id": "relation_b_table",
+                      "props": {
+                        "label": "token:layout.labels.relation_b"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attributes": [
+    {
+      "key": "network-inventory/network-elements/network-element/ne-id",
+      "label": "Ne Id",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/ne-type",
+      "label": "Ne Type",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/uuid",
+      "label": "Uuid",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/name",
+      "label": "Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/alias",
+      "label": "Alias",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/description",
+      "label": "Description",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/software-rev/name",
+      "label": "Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/software-rev/revision",
+      "label": "Revision",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/software-rev/patch/revision",
+      "label": "Revision",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/mfg-name",
+      "label": "Mfg Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/product-name",
+      "label": "Product Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/product-rev",
+      "label": "Product Rev",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/component-id",
+      "label": "Component Id",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/class",
+      "label": "Class",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": true
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/uuid",
+      "label": "Uuid",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/name",
+      "label": "Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/alias",
+      "label": "Alias",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/description",
+      "label": "Description",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/software-rev/name",
+      "label": "Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/software-rev/revision",
+      "label": "Revision",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/software-rev/patch/revision",
+      "label": "Revision",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/mfg-name",
+      "label": "Mfg Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/product-name",
+      "label": "Product Name",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/hardware-rev",
+      "label": "Hardware Rev",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/mfg-date",
+      "label": "Mfg Date",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/part-number",
+      "label": "Part Number",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/serial-number",
+      "label": "Serial Number",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/asset-id",
+      "label": "Asset Id",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/is-fru",
+      "label": "Is Fru",
+      "type": "boolean",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/uri",
+      "label": "Uri",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/parent",
+      "label": "Parent",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/parent-rel-pos",
+      "label": "Parent Rel Pos",
+      "type": "string",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    },
+    {
+      "key": "network-inventory/network-elements/network-element/components/component/is-main",
+      "label": "Is Main",
+      "type": "boolean",
+      "sectionGroup": "network-inventory",
+      "isRequired": false
+    }
+  ]
+}

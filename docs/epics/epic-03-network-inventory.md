@@ -12,10 +12,12 @@ spec_source: "Project Constitution"
 This Bounded Context defines a base model for retrieving network inventory, conforming to the Network Management Datastore Architecture (NMDA). It specifies the top-level container for network inventory, network elements, and their hierarchically nested hardware and non-hardware components.
 
 ## 2. Requirements & Checklist
-- [ ] #TBD - [epic-01-geo-location.md](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-01-geo-location.md) (Prerequisite parent Epic for imported module)
-- [ ] #TBD - [Feature: Network Inventory (network-inventory)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md)
-- [ ] #TBD - [Feature: Network Elements (network-elements)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-15-network-elements.md)
-- [ ] #TBD - [Feature: Components (components)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-16-components.md)
+- [ ] #TBD - [Parent Epic: epic-01-geo-location.md](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/epics/epic-01-geo-location.md) (Prerequisite parent Epic for imported module)
+- [ ] #52 - [Feature: Network Inventory (network-inventory)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-14-network-inventory.md)
+- [ ] #53 - [Feature: Network Elements (network-elements)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-15-network-elements.md)
+- [ ] #55 - [Feature: Components (components)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-16-components.md)
+- [ ] #TBD - [Feature: Software Revision (software-rev)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-17-software-rev.md)
+- [ ] #TBD - [Feature: Software Patch (patch)](https://github.com/gintatkinson/digital-pipeline-repo/blob/main/docs/features/feat-18-patch.md)
 
 ### Associated Use Cases & User Stories
 
@@ -31,21 +33,31 @@ This Bounded Context defines a base model for retrieving network inventory, conf
 Define the subsystem representing the Epic as a UML Component specifying provided/required interfaces and operations.
 ```mermaid
 classDiagram
-    note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref"
+    note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref, patch, software-rev"
     class NetworkInventorySubsystem {
         <<component>>
         +Boolean retrieveInventory() "[1]"
         +String queryNetworkElement(String neId) "[0..1]"
     }
+    class IInventory {
+        <<interface>>
+    }
+    NetworkInventorySubsystem ..> IInventory : provides
 ```
 
 ## System-Level UML Class Diagram
 ```mermaid
 classDiagram
-    note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref"
+    note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref, patch, software-rev"
     class NetworkInventorySubsystem {
         <<component>>
+        +Boolean retrieveInventory() "[1]"
+        +String queryNetworkElement(String neId) "[0..1]"
     }
+    class IInventory {
+        <<interface>>
+    }
+    NetworkInventorySubsystem ..> IInventory : provides
     class Nwi_NetworkInventory
     class Nwi_NetworkElements
     class Nwi_NetworkElement {

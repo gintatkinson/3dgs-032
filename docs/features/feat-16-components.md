@@ -21,7 +21,7 @@ This feature provides the capability to retrieve and manage the components withi
 ## UML Class Diagram
 ```mermaid
 classDiagram
-    note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref"
+    note "Coverage - basic-common-entity-attributes, component-attributes, ne-component-common-entity-attributes, ne-physical, ne-type, non-hardware-component-class, port-ref, patch, software-rev"
     class Nwi_NetworkInventory
     class Nwi_NetworkElements
     class Nwi_NetworkElement
@@ -44,7 +44,7 @@ classDiagram
         +String uri "[0..*]"
         +String parent "[0..*]"
         +String parent-rel-pos "[0..1]"
-        +Boolean is-main "[0..1]" (when class is chassis)
+        +Boolean is-main "[0..1]"
     }
     class Nwi_SoftwareRev {
         +String name "[1]"
