@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-08-01T05:38:52.609250Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "66a3cdb5d959084d85a328d33800feb05ce0f94d"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-01-geo-location.md:16 contains unresolved issue reference token: '- [ ] #[EpicIssueID] - [epic-01-geo-location]([Repository Base URL]/<blob_path>/[Branch Name]/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)'. Specification templates must be populated before registration.",
+      "Feature feat-01-geo-location.md class 'GeoLocation' method '\"[0..1]\"' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Feature feat-01-geo-location.md class 'GeoLocation' method '\"[0..1]\"' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

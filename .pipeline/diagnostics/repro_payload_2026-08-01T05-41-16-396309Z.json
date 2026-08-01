@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-08-01T05:41:16.396309Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "66a3cdb5d959084d85a328d33800feb05ce0f94d"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Epic epic-01-geo-location.md contains a UML Class Diagram with no relationships. Isolated classes are prohibited; you must illustrate containment/inheritance/choice composition.",
+      "Epic epic-01-geo-location.md contains class 'GeoLocationSubsystem' with zero relationships. Isolated classes are prohibited.",
+      "Epic epic-01-geo-location.md class 'GeoLocationSubsystem' method 'providedInterface' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Epic epic-01-geo-location.md class 'GeoLocationSubsystem' method 'requiredInterface' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Epic epic-01-geo-location.md class 'ReferenceFrame' method '\"[0..1]\"' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Epic epic-01-geo-location.md subsystem component class 'GeoLocationSubsystem' is empty. Subsystem components must define at least one attribute or operation."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "",
+    "snippet_type": "text",
+    "snippet_content": ""
+  }
+}

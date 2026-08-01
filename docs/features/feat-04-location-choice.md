@@ -1,0 +1,69 @@
+---
+title: "Location Choice"
+epic: "epic-01-geo-location"
+type: "feature"
+interface_type: "ui"
+generation_mode: "subagent"
+labels: ["feature", "geo-location"]
+schema_containers:
+  - path: "ietf-geo-location:geo-location/location"
+    node_type: container
+---
+
+# Feature: Location Choice
+
+## Parent Epic
+- [ ] #000 - [epic-01-geo-location]([Repository Base URL]/<blob_path>/[Branch Name]/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
+
+## Description
+This feature specifies the Location Choice attributes.
+
+## UML Class Diagram
+```mermaid
+classDiagram
+    class GeoLocation {
+    }
+    class Location {
+        <<choice>>
+    }
+    GeoLocation *-- Location
+
+
+```
+
+## Interface Requirements
+
+### 1. Test Data Shape
+```json
+{}
+```
+
+### 2. Validation & Constraints
+- Validations here.
+
+### 3. Visual Layout & Arrangement
+- The timing attributes should be presented in a details panel or property table.
+- Enforce CSS resets (box-sizing), scoped naming (CSS Modules/BEM) to avoid specificity conflicts, layout containment parameters (restricting containment to outer layout splitters and forbidding it on scrollable child panels).
+- Valid DOM nesting for tree structures must be observed.
+
+### 4. Interactive Flow & States
+- Provide clear read-only visual representation for timing values.
+- If in an editable context, mandate computed-style assertions (such as verifying scroll dimensions or highlight colors) in the test guidelines for visual or active selection states.
+
+## Given-When-Then Acceptance Criteria
+**Scenario 1: Viewing Location Choice**
+- **Given** a record exists
+- **When** the user views it
+- **Then** the interface displays it
+
+## Specification Context (Verbatim)
+N/A
+
+## Source References
+Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang) (Clause: geo-location)
+Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179) (Clause: 6.1)
+
+## Logical UI & Layout Bindings
+- **Target LUI Component:** PropertyGrid
+- **Target Layout Container ID:** properties_view
+- **Data Source Bindings:** /ietf-geo-location:geo-location

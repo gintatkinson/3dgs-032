@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-08-01T05:40:55.901314Z",
+  "tooling": {
+    "name": "parity_auditor",
+    "version": "1.0.0"
+  },
+  "context": {
+    "command": "./skills/spec-orchestrator/scripts/verify_model_coverage.py --spec-only --allow-missing-specs",
+    "exit_code": 1,
+    "downstream_repo": "https://github.com/gintatkinson/3dgs-032.git",
+    "commit_hash": "66a3cdb5d959084d85a328d33800feb05ce0f94d"
+  },
+  "failure": {
+    "traceback": "",
+    "error_summary": [
+      "Feature feat-02-reference-frame.md class 'ReferenceFrame' attribute 'alternate-system' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-02-reference-frame.md class 'ReferenceFrame' attribute 'astronomical-body' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "[FEATURE] [feat-02-reference-frame.md] UML Class Diagram is missing class node 'GeoLocation' or 'IetfGeoLocation_GeoLocation' for schema container path segment 'ietf-geo-location:geo-location' in path 'ietf-geo-location:geo-location/reference-frame'.",
+      "Feature feat-06-location-cartesian.md class 'LocationCartesian' attribute 'x' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-06-location-cartesian.md class 'LocationCartesian' attribute 'y' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-06-location-cartesian.md class 'LocationCartesian' attribute 'z' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-06-location-cartesian.md class 'LocationCartesian' attribute 'cartesian' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "[FEATURE] [feat-06-location-cartesian.md] UML Class Diagram is missing class node 'GeoLocation' or 'IetfGeoLocation_GeoLocation' for schema container path segment 'ietf-geo-location:geo-location' in path 'ietf-geo-location:geo-location/location/cartesian'.",
+      "[FEATURE] [feat-06-location-cartesian.md] UML Class Diagram is missing class node 'Location' for schema container path segment 'location' in path 'ietf-geo-location:geo-location/location/cartesian'.",
+      "[FEATURE] [feat-06-location-cartesian.md] UML Class Diagram is missing class node 'Cartesian' for schema container path segment 'cartesian' in path 'ietf-geo-location:geo-location/location/cartesian'.",
+      "Feature feat-07-velocity.md class 'Velocity' attribute 'v-north' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-07-velocity.md class 'Velocity' attribute 'v-east' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-07-velocity.md class 'Velocity' attribute 'v-up' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-07-velocity.md class 'Velocity' attribute 'velocity' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "[FEATURE] [feat-07-velocity.md] UML Class Diagram is missing class node 'GeoLocation' or 'IetfGeoLocation_GeoLocation' for schema container path segment 'ietf-geo-location:geo-location' in path 'ietf-geo-location:geo-location/velocity'.",
+      "Feature feat-05-location-ellipsoid.md class 'LocationEllipsoid' attribute 'latitude' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-05-location-ellipsoid.md class 'LocationEllipsoid' attribute 'longitude' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-05-location-ellipsoid.md class 'LocationEllipsoid' attribute 'height' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-05-location-ellipsoid.md class 'LocationEllipsoid' attribute 'ellipsoid' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "[FEATURE] [feat-05-location-ellipsoid.md] UML Class Diagram is missing class node 'GeoLocation' or 'IetfGeoLocation_GeoLocation' for schema container path segment 'ietf-geo-location:geo-location' in path 'ietf-geo-location:geo-location/location/ellipsoid'.",
+      "[FEATURE] [feat-05-location-ellipsoid.md] UML Class Diagram is missing class node 'Location' for schema container path segment 'location' in path 'ietf-geo-location:geo-location/location/ellipsoid'.",
+      "[FEATURE] [feat-05-location-ellipsoid.md] UML Class Diagram is missing class node 'Ellipsoid' for schema container path segment 'ellipsoid' in path 'ietf-geo-location:geo-location/location/ellipsoid'.",
+      "Feature feat-03-geodetic-system.md class 'GeodeticSystem' attribute 'geodetic-datum' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-03-geodetic-system.md class 'GeodeticSystem' attribute 'coord-accuracy' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "Feature feat-03-geodetic-system.md class 'GeodeticSystem' attribute 'height-accuracy' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "[FEATURE] [feat-03-geodetic-system.md] UML Class Diagram is missing class node 'GeoLocation' or 'IetfGeoLocation_GeoLocation' for schema container path segment 'ietf-geo-location:geo-location' in path 'ietf-geo-location:geo-location/reference-frame/geodetic-system'.",
+      "[FEATURE] [feat-03-geodetic-system.md] UML Class Diagram is missing class node 'ReferenceFrame' for schema container path segment 'reference-frame' in path 'ietf-geo-location:geo-location/reference-frame/geodetic-system'.",
+      "Feature feat-04-location-choice.md class 'LocationChoice' attribute 'location' is missing a multiplicity (e.g. [1], [0..1], [0..*]).",
+      "[FEATURE] [feat-04-location-choice.md] UML Class Diagram is missing class node 'GeoLocation' or 'IetfGeoLocation_GeoLocation' for schema container path segment 'ietf-geo-location:geo-location' in path 'ietf-geo-location:geo-location/location'.",
+      "[FEATURE] [feat-04-location-choice.md] UML Class Diagram is missing class node 'Location' for schema container path segment 'location' in path 'ietf-geo-location:geo-location/location'.",
+      "Epic epic-01-geo-location.md contains a UML Class Diagram with no relationships. Isolated classes are prohibited; you must illustrate containment/inheritance/choice composition.",
+      "Epic epic-01-geo-location.md contains class 'GeoLocationSubsystem' with zero relationships. Isolated classes are prohibited.",
+      "Epic epic-01-geo-location.md class 'GeoLocationSubsystem' method 'providedInterface' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Epic epic-01-geo-location.md class 'GeoLocationSubsystem' method 'requiredInterface' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Epic epic-01-geo-location.md class 'ReferenceFrame' method '\"[0..1]\"' is missing a multiplicity (e.g. [1], [0..1], [0..*]) in its return signature.",
+      "Epic epic-01-geo-location.md subsystem component class 'GeoLocationSubsystem' is empty. Subsystem components must define at least one attribute or operation.",
+      "Logical UI Compliance: Feature 'docs/features/feat-06-location-cartesian.md' Data Source Binding '/ietf-geo-location:geo-location/location/cartesian' contains forbidden YANG choice/case node 'cartesian'. Choice/case wrappers must be omitted from data paths.",
+      "Logical UI Compliance: Feature 'docs/features/feat-05-location-ellipsoid.md' Data Source Binding '/ietf-geo-location:geo-location/location/ellipsoid' contains forbidden YANG choice/case node 'ellipsoid'. Choice/case wrappers must be omitted from data paths."
+    ]
+  },
+  "reproduction_case": {
+    "target_file": "docs/features/feat-06-location-cartesian.md",
+    "snippet_type": "markdown",
+    "snippet_content": "---\ntitle: \"Location Cartesian\"\nepic: \"epic-01-geo-location\"\ntype: \"feature\"\ninterface_type: \"ui\"\ngeneration_mode: \"subagent\"\nlabels: [\"feature\", \"geo-location\"]\nschema_containers:\n  - path: \"ietf-geo-location:geo-location/location/cartesian\"\n    node_type: container\n---\n\n# Feature: Location Cartesian\n\n## Parent Epic\n- [ ] #000 - [epic-01-geo-location]([Repository Base URL]/<blob_path>/[Branch Name]/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)\n\n## Description\nThis feature specifies the Location Cartesian attributes.\n\n## UML Class Diagram\n```mermaid\nclassDiagram\n    class SystemRoot\n    class LocationCartesian {\n        +String x\n        +String y\n        +String z\n        +String cartesian\n\n    }\n    SystemRoot *-- LocationCartesian : \"contains\"\n\n```\n\n## Interface Requirements\n\n### 1. Test Data Shape\n```json\n{}\n```\n\n### 2. Validation & Constraints\n- Validations here.\n\n### 3. Visual Layout & Arrangement\n- The timing attributes should be presented in a details panel or property table.\n- Enforce CSS resets (box-sizing), scoped naming (CSS Modules/BEM) to avoid specificity conflicts, layout containment parameters (restricting containment to outer layout splitters and forbidding it on scrollable child panels).\n- Valid DOM nesting for tree structures must be observed.\n\n### 4. Interactive Flow & States\n- Provide clear read-only visual representation for timing values.\n- If in an editable context, mandate computed-style assertions (such as verifying scroll dimensions or highlight colors) in the test guidelines for visual or active selection states.\n\n## Given-When-Then Acceptance Criteria\n**Scenario 1: Viewing Location Cartesian**\n- **Given** a record exists\n- **When** the user views it\n- **Then** the interface displays it\n\n## Specification Context (Verbatim)\nN/A\n\n## Source References\nStructural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang) (Clause: geo-location)\nNormative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179) (Clause: 6.1)\n\n## Logical UI & Layout Bindings\n- **Target LUI Component:** PropertyGrid\n- **Target Layout Container ID:** properties_view\n- **Data Source Bindings:** /ietf-geo-location:geo-location/location/cartesian\n"
+  }
+}
