@@ -13,7 +13,7 @@ schema_containers:
 # Feature: Geo-Location Timing Attributes
 
 ## Parent Epic
-- [ ] #000 - [epic-01-geo-location]([Repository Base URL]/<blob_path>/[Branch Name]/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
+- [ ] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
 
 ## Description
 This feature specifies the timing and expiration attributes (`timestamp` and `valid-until`) for a location on an astronomical body. These attributes indicate when a geo-location was recorded and when it expires.

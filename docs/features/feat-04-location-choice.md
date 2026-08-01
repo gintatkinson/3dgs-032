@@ -13,7 +13,7 @@ schema_containers:
 # Feature: Location Choice
 
 ## Parent Epic
-- [ ] #000 - [epic-01-geo-location]([Repository Base URL]/<blob_path>/[Branch Name]/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
+- [ ] #5 - [epic-01-geo-location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the timing attributes for geo-location)
 
 ## Description
 This feature specifies the Location Choice attributes.

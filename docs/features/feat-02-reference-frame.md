@@ -1,6 +1,6 @@
 ---
-title: "Reference Frame"
-epic: "epic-01-geo-location"
+title: "Feature: reference-frame"
+epic: "IETF Geo Location"
 type: "feature"
 interface_type: "ui"
 generation_mode: "subagent"
@@ -10,13 +10,13 @@ schema_containers:
     node_type: container
 ---
 
-# Feature: Reference Frame
+# Feature: reference-frame
 
 ## Parent Epic
-- [ ] #000 - [Geo Location Epic](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Defines the reference frame subsystem context)
+- [ ] #ID - [IETF Geo Location](https://github.com/gintatkinson/3dgs-032/tree/main/docs/epics/epic-01-geo-location.md) (Contains the reference-frame as part of geo-location subsystem)
 
 ## Description
-This feature specifies the Frame of Reference for the location values, including the astronomical body and the ability to define alternate systems.
+The Frame of Reference for the location values.
 
 ## UML Class Diagram
 ```mermaid
@@ -24,12 +24,12 @@ classDiagram
     class GeoLocation {
     }
     class ReferenceFrame {
-        +String alternate-system
-        +String astronomical-body
+        +String alternate-system "[0..1]"
+        +String astronomical-body "[0..1]"
     }
-    note for ReferenceFrame "Guard if-feature alternate-systems applies to alternate-system"
-    note for ReferenceFrame "astronomical-body default is earth"
-    GeoLocation *-- ReferenceFrame : "has reference frame"
+    note for ReferenceFrame "alternate-system if-feature alternate-systems"
+    note for ReferenceFrame "astronomical-body default earth"
+    GeoLocation *-- ReferenceFrame : referenceFrame
 ```
 
 ## Interface Requirements
@@ -37,49 +37,41 @@ classDiagram
 ### 1. Test Data Shape
 ```json
 {
-  "alternate-system": "virtual-reality-1",
+  "alternate-system": "my-custom-system",
   "astronomical-body": "earth"
 }
 ```
 
 ### 2. Validation & Constraints
-- `alternate-system`: Optional string. The system in which the astronomical body and geodetic-datum is defined. Conditionally present if `alternate-systems` feature is supported.
-- `astronomical-body`: Optional string.
-  - Pattern: `[ -@\[-\^_-~]*`
-  - Default: `earth`
-  - Constraints: The ASCII value SHOULD have uppercase converted to lowercase and not include control characters (values 32..64, and 91..126). Any preceding 'the' in the name SHOULD NOT be included.
+- `alternate-system`: Optional string. Conditioned on feature guard `alternate-systems`.
+- `astronomical-body`: Optional string. Pattern constraint `[ -@\\[-\\^_-~]*`. Default value is `earth`.
 
 ### 3. Visual Layout & Arrangement
-- Provide a standard property panel to display reference frame values.
-- Enforce CSS resets (box-sizing), scoped naming (CSS Modules/BEM) to avoid specificity conflicts, layout containment parameters (restricting containment to outer layout splitters and forbidding it on scrollable child panels), and valid DOM nesting for tree structures (recursive lists nested inside parent list-items).
+- The reference frame data should be displayed in a property grid or details panel.
+- Enforce CSS resets (box-sizing), scoped naming (CSS Modules/BEM) to avoid specificity conflicts.
+- Implement layout containment parameters (restricting containment to outer layout splitters and forbidding it on scrollable child panels).
+- Ensure valid DOM nesting for tree structures.
 
 ### 4. Interactive Flow & States
-- If the `alternate-systems` feature is not active, `alternate-system` should not be editable or displayed.
+- Fields are generally read-only in telemetry views but may be editable during configuration.
+- Appropriate error states must be displayed if the pattern constraint for `astronomical-body` is violated.
 - Mandate computed-style assertions (such as verifying scroll dimensions or highlight colors) in the test guidelines for visual or active selection states.
 
 ## Given-When-Then Acceptance Criteria
-
-**Scenario: Configure Astronomical Body**
-- **Given** the user is viewing the reference frame configuration
-- **When** the user inputs an astronomical body like "moon"
-- **Then** the system validates it against the character pattern constraint and accepts it
-
-**Scenario: Default Astronomical Body Fallback**
-- **Given** the reference frame is initialized without an explicit astronomical body
-- **When** the system resolves the value
-- **Then** it defaults to "earth"
+- **Given** a location requires a reference frame, **When** the reference frame is queried, **Then** the `astronomical-body` must default to `earth` if not explicitly provided.
+- **Given** a reference frame is instantiated, **When** `astronomical-body` is set, **Then** it must pass the pattern constraint `[ -@\\[-\\^_-~]*`.
+- **Given** a reference frame is instantiated, **When** `alternate-system` is set, **Then** it must be accepted only if the `alternate-systems` feature guard is active.
 
 ## Specification Context (Verbatim)
-"The Frame of Reference for the location values.
-The system in which the astronomical body and geodetic-datum is defined. Normally, this value is not present and the system is the natural universe; however, when present, this value allows for specifying alternate systems (e.g., virtual realities). An alternate-system modifies the definition (but not the type) of the other values in the reference frame.
-An astronomical body as named by the International Astronomical Union (IAU) or according to the alternate system if specified. Examples include 'sun' (our star), 'earth' (our planet), 'moon' (our moon), 'enceladus' (a moon of Saturn), 'ceres' (an asteroid), and '67p/churyumov-gerasimenko (a comet). The ASCII value SHOULD have uppercase converted to lowercase and not include control characters (i.e., values 32..64, and 91..126). Any preceding 'the' in the name SHOULD NOT be included."
+The Frame of Reference for the location values.
+The `alternate-system` is the system in which the astronomical body and geodetic-datum is defined.
+The `astronomical-body` is an astronomical body as named by the International Astronomical Union.
 
 ## Source References
-Structural Schema: [ietf-geo-location@2022-02-11.yang](file:///Users/perkunas/jail/3dgs-032/schema/ietf-geo-location@2022-02-11.yang) (Clause: geo-location/reference-frame)
-Normative Specification: [RFC 9179](https://www.rfc-editor.org/info/rfc9179) (Clause: Section 6.1)
+Structural Schema: [ietf-geo-location@2022-02-11.yang](https://github.com/gintatkinson/3dgs-032/blob/main/schema/ietf-geo-location@2022-02-11.yang) (Clause: N/A)
+Normative Specification: [RFC 9179](https://datatracker.ietf.org/doc/html/rfc9179) (Clause: N/A)
 
 ## Logical UI & Layout Bindings
 - **Target LUI Component:** PropertyGrid
 - **Target Layout Container ID:** properties_view
-- **Data Source Bindings:** 
-  - `/ietf-geo-location:geo-location/ietf-geo-location:reference-frame`
+- **Data Source Bindings:** /ietf-geo-location:geo-location/ietf-geo-location:reference-frame
